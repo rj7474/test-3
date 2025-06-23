@@ -1,45 +1,60 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CargobikeServices - Livraison éco à Genève</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>CargobikeServices</h1>
-    <p>Livraison éco-responsable à Genève en vélo cargo</p>
-  </header>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('geneve.jpg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #2d4a2d;
+}
 
-  <section id="services">
-    <h2>Nos services</h2>
-    <ul>
-      <li>Livraison de colis express et écologique</li>
-      <li>Transport de courses ou documents</li>
-      <li>Service professionnel pour entreprises locales</li>
-    </ul>
-  </section>
+/* Ajoute un fond semi-transparent pour la lisibilité */
+header, section, footer {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
-  <section id="about">
-    <h2>Pourquoi Genève ?</h2>
-    <p>Réduire la pollution en ville, améliorer la circulation, et soutenir un avenir durable.</p>
-  </section>
+h1, h2 {
+  color: #2d4a2d;
+}
 
-  <section id="form">
-    <h2>Commander une livraison</h2>
-    <form action="https://formspree.io/f/mwkgygwl" method="POST">
-      <label>Nom : <input type="text" name="nom" required></label><br>
-      <label>Email : <input type="email" name="email" required></label><br>
-      <label>Adresse de départ : <input type="text" name="depart" required></label><br>
-      <label>Adresse d’arrivée : <input type="text" name="arrivee" required></label><br>
-      <label>Détails du colis : <textarea name="details" rows="4"></textarea></label><br>
-      <button type="submit">Envoyer la demande</button>
-    </form>
-  </section>
+ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
 
-  <footer>
-    <p>&copy; 2025 CargobikeServices · Genève · Livraison 100% vélo</p>
-  </footer>
-</body>
-</html>
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, select {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: rgba(230, 247, 230, 0.85);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
