@@ -10,7 +10,7 @@ body {
 
 /* Conteneur lisible sur l’image de fond */
 header, section, footer {
-  background-color: rgba(255, 255, 255, 0.85); /* fond blanc semi-transparent */
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 12px;
   padding: 2rem;
   max-width: 900px;
@@ -18,25 +18,29 @@ header, section, footer {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Titres */
-h1, h2 {
-  color: #2d4a2d;
+/* Conteneur du logo + titre */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* Centrage et taille du titre */
+/* Logo calibré */
+.logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Titre */
 header h1 {
   text-align: center;
   font-size: 3rem;
-  margin: 0;.logo {
-  height: 100px;       /* Hauteur adaptée au bandeau */
-  width: auto;         /* Pour conserver les proportions */
-  object-fit: contain; /* S’assure qu’il reste bien ajusté */
-.header-container {
-  align-items: flex-start; /* ou center, selon l'effet voulu */
+  margin: 0;
+  flex: 1;
 }
 
-    
-/* Style du sous-titre */
+/* Sous-titre */
 header p {
   text-align: center;
   font-size: 1.2rem;
