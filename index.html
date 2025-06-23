@@ -12,21 +12,56 @@
     <p>Livraison éco-responsable à Genève en vélo cargo</p>
   </header>
 
-  <section id="services">
-    <h2>Nos services</h2>
-    <ul>
-      <li>Livraison de colis express et écologique</li>
-      <li>Transport de courses ou documents</li>
-      <li>Service professionnel pour entreprises locales</li>
-    </ul>
-  </section>
+ <section id="form">
+  <h2>Commander une livraison</h2>
+  <form id="livraisonForm" action="https://formspree.io/f/mwkgygwl" method="POST">
+    <label>Nom :
+      <input type="text" name="nom" required />
+    </label><br>
 
-  <section id="about">
-    <h2>Pourquoi Genève ?</h2>
-    <p>Réduire la pollution en ville, améliorer la circulation, et soutenir un avenir durable.</p>
-  </section>
+    <label>Email :
+      <input type="email" name="email" required />
+    </label><br>
 
-  <section id="form">
+    <label>Type de client :
+      <select id="typeClient" name="type">
+        <option value="particulier">Particulier</option>
+        <option value="entreprise">Entreprise</option>
+      </select>
+    </label><br>
+
+    <div id="societeField" style="display: none;">
+      <label>Nom de société :
+        <input type="text" name="societe" />
+      </label><br>
+    </div>
+
+    <label>Livraison urgente :
+      <input type="checkbox" id="urgence" />
+    </label><br>
+
+    <div id="heureLimiteField" style="display: none;">
+      <label>Heure limite :
+        <input type="time" name="heureLimite" />
+      </label><br>
+    </div>
+
+    <label>Adresse de départ :
+      <input type="text" name="depart" required />
+    </label><br>
+
+    <label>Adresse d’arrivée :
+      <input type="text" name="arrivee" required />
+    </label><br>
+
+    <label>Détails du colis :
+      <textarea name="details" rows="4"></textarea>
+    </label><br>
+
+    <button type="submit">Envoyer la demande</button>
+  </form>
+</section>
+
     <h2>Commander une livraison</h2>
     <form action="https://formspree.io/f/mwkgygwl" method="POST">
       <label>Nom : <input type="text" name="nom" required></label><br>
