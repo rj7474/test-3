@@ -1,57 +1,227 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/style.css">
-
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Demande de Livraison - Vélo Cargo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CargoBikeServices - Livraison écoresponsable à Genève</title>
+  <style>
+    /* Reset simple */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2a7a3d;
+      padding: 20px 40px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      height: 300px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #2a7a3d;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #2a7a3d;
+      padding-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Form styling */
+    form {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #2a7a3d;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 18px;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+      resize: vertical;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus,
+    textarea:focus {
+      border-color: #2a7a3d;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 80px;
+    }
+
+    button {
+      background-color: #2a7a3d;
+      color: white;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1e4f26;
+    }
+
+    footer {
+      background-color: #2a7a3d;
+      color: white;
+      text-align: center;
+      padding: 20px 15px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        font-size: 1.5rem;
+        height: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>CargoBikeServices</h1>
-</header>
 
-  <section>
-    <h1>Demande de Livraison</h1>
-    <form action="#" method="POST">
-      <label for="nom">Nom *</label>
-      <input type="text" id="nom" name="nom" required>
+  <header>
+    CargoBikeServices
+  </header>
 
-      <label for="email">E-mail *</label>
-      <input type="email" id="email" name="email" required>
+  <main>
+    <section class="hero">
+      Livraison écoresponsable à vélo cargo haute capacité à Genève
+    </section>
 
-      <label for="telephone">Téléphone *</label>
-      <input type="tel" id="telephone" name="telephone" required>
+    <section>
+      <h2>Notre mission</h2>
+      <p>
+        CargoBikeServices propose une solution de livraison écologique et efficace pour les entreprises (B2B) et les particuliers à Genève.
+        Nos vélos cargo haute capacité assurent des livraisons rapides, fiables, et sans émissions de CO2.
+      </p>
+      <ul>
+        <li>Respect de l'environnement avec zéro émission</li>
+        <li>Grande capacité de transport pour vos colis</li>
+        <li>Flexibilité et rapidité en milieu urbain</li>
+        <li>Service personnalisé adapté à vos besoins</li>
+      </ul>
+    </section>
 
-      <label for="type-client">Type de client *</label>
-      <select id="type-client" name="type-client" required>
-        <option value="">-- Choisissez --</option>
-        <option value="particulier">Particulier</option>
-        <option value="entreprise">Entreprise (B2B)</option>
-      </select>
+    <section>
+      <h2>Comment ça marche ?</h2>
+      <ol>
+        <li>Remplissez le formulaire de demande ci-dessous</li>
+        <li>Nous étudions votre demande et planifions la livraison</li>
+        <li>Livraison rapide à vélo cargo écologique</li>
+        <li>Suivi et service client dédiés</li>
+      </ol>
+    </section>
 
-      <label for="type-livraison">Type de livraison *</label>
-      <select id="type-livraison" name="type-livraison" required>
-        <option value="">-- Sélectionnez --</option>
-        <option value="colis">Colis</option>
-        <option value="produits_frais">Produits frais</option>
-        <option value="encombrant">Marchandises encombrantes</option>
-      </select>
+    <section>
+      <h2>Demande de livraison</h2>
+      <form id="deliveryForm" action="#" method="post">
+        <label for="name">Nom / Société *</label>
+        <input type="text" id="name" name="name" required />
 
-      <label for="adresse">Adresse de livraison *</label>
-      <textarea id="adresse" name="adresse" rows="2" required></textarea>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
 
-      <label for="volume">Volume/Poids estimé</label>
-      <input type="text" id="volume" name="volume" placeholder="Ex : 1 m³ ou 50 kg">
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" name="phone" />
 
-      <label for="message">Informations supplémentaires</label>
-      <textarea id="message" name="message" rows="4"></textarea>
+        <label for="pickup">Adresse de prise en charge *</label>
+        <input type="text" id="pickup" name="pickup" required />
 
-      <button type="submit">Envoyer la demande</button>
-    </form>
-  </section>
+        <label for="delivery">Adresse de livraison *</label>
+        <input type="text" id="delivery" name="delivery" required />
+
+        <label for="parcel">Type de colis / volume estimé</label>
+        <input type="text" id="parcel" name="parcel" />
+
+        <label for="date">Date souhaitée *</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="message">Détails supplémentaires</label>
+        <textarea id="message" name="message" placeholder="Informations complémentaires"></textarea>
+
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 CargoBikeServices - Livraison écoresponsable à Genève | contact@cargobikeservices.ch
+  </footer>
 
 </body>
 </html>
-
