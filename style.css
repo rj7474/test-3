@@ -21,6 +21,18 @@ header, section, footer {
 /* Titres */
 h1, h2 {
   color: #2d4a2d;
+  header h1 {
+  text-align: center;         /* centre horizontalement */
+  font-size: 4rem;            /* agrandit la taille du texte */
+  margin: 0;                  /* enlève les marges par défaut */
+}
+
+header p {
+  text-align: center;         /* centre aussi le sous-titre */
+  font-size: 1.2rem;          /* taille un peu plus grande si tu veux */
+  margin-top: 0.5rem;
+}
+
 }
 
 /* Formulaire */
