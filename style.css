@@ -1,39 +1,35 @@
+/* Arrière-plan avec l’image de Genève */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2fff2;
+  background: url('geneve.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #2d4a2d;
 }
 
-header {
-  background-color: #4CAF50;
-  color: white;
+/* Conteneur lisible sur l’image de fond */
+header, section, footer {
+  background-color: rgba(255, 255, 255, 0.85); /* fond blanc semi-transparent */
+  border-radius: 12px;
   padding: 2rem;
-  text-align: center;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-}
-
+/* Titres */
 h1, h2 {
   color: #2d4a2d;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 1.2rem;
-}
-
+/* Formulaire */
 form {
   display: flex;
   flex-direction: column;
 }
 
-input, textarea {
+input, textarea, select {
   margin-bottom: 1rem;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -53,8 +49,9 @@ button:hover {
   background-color: #45a049;
 }
 
+/* Pied de page */
 footer {
-  background-color: #e6f7e6;
+  background-color: rgba(230, 247, 230, 0.85);
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
