@@ -31,10 +31,11 @@ header h1 {
   height: 100px;       /* Hauteur adaptée au bandeau */
   width: auto;         /* Pour conserver les proportions */
   object-fit: contain; /* S’assure qu’il reste bien ajusté */
+.header-container {
+  align-items: flex-start; /* ou center, selon l'effet voulu */
 }
 
-
-
+    
 /* Style du sous-titre */
 header p {
   text-align: center;
