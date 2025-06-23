@@ -6,6 +6,16 @@ body {
   background-size: cover;
   color: #2d4a2d;
 }
+header {
+  background-color: rgba(45, 74, 45, 0.9); /* vert foncé semi-transparent */
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
 section {
   background-color: rgba(255, 255, 255, 0.9);
