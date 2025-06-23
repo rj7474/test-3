@@ -1,15 +1,16 @@
+/* Arrière-plan avec l’image de Genève */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url('geneve-bg.jpg') no-repeat center center fixed;
+  background: url('geneve.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #2d4a2d;
 }
 
-/* Ajoute un fond semi-transparent pour la lisibilité */
+/* Conteneur lisible sur l’image de fond */
 header, section, footer {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.85); /* fond blanc semi-transparent */
   border-radius: 12px;
   padding: 2rem;
   max-width: 900px;
@@ -17,15 +18,12 @@ header, section, footer {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
+/* Titres */
 h1, h2 {
   color: #2d4a2d;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 1.2rem;
-}
-
+/* Formulaire */
 form {
   display: flex;
   flex-direction: column;
@@ -51,6 +49,7 @@ button:hover {
   background-color: #45a049;
 }
 
+/* Pied de page */
 footer {
   background-color: rgba(230, 247, 230, 0.85);
   text-align: center;
