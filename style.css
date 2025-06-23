@@ -18,9 +18,7 @@ header, section, footer {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Conteneur du logo + titre */
-.header-container {
-  /* Bandeau principal */
+/* Bandeau principal (logo + titres) */
 .header-banner {
   display: flex;
   align-items: center;
@@ -34,7 +32,7 @@ header, section, footer {
   flex-wrap: wrap;
 }
 
-/* Logo */
+/* Logo calibré */
 .logo {
   height: 100px;
   width: auto;
@@ -54,53 +52,6 @@ header, section, footer {
   color: #2d4a2d;
 }
 
-/* Responsive pour petits écrans */
-@media (max-width: 600px) {
-  .header-banner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .logo {
-    height: 70px;
-  }
-
-  .header-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .header-text p {
-    font-size: 1rem;
-  }
-
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-/* Logo calibré */
-.logo {
-  height: 80px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* Titre */
-header h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin: 0;
-  flex: 1;
-}
-
-/* Sous-titre */
-header p {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-}
-
 /* Formulaire */
 form {
   display: flex;
@@ -109,51 +60,4 @@ form {
 
 input, textarea, select {
   margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 0.7rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-/* Pied de page */
-footer {
-  background-color: rgba(230, 247, 230, 0.85);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* ✅ Responsive pour petits écrans */
-@media (max-width: 600px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .logo {
-    height: 60px;
-    margin-bottom: 1rem;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-}
+  padding: 0.5r
