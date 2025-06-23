@@ -66,4 +66,22 @@
   </section>
 
   <footer>
-    <
+    <p>&copy; 2025 CargobikeServices · Genève · Livraison 100% vélo</p>
+  </footer>
+
+  <script>
+    const typeClient = document.getElementById('typeClient');
+    const societeField = document.getElementById('societeField');
+    const urgenceCheckbox = document.getElementById('urgence');
+    const heureLimiteField = document.getElementById('heureLimiteField');
+
+    typeClient.addEventListener('change', () => {
+      societeField.style.display = (typeClient.value === 'entreprise') ? 'block' : 'none';
+    });
+
+    urgenceCheckbox.addEventListener('change', () => {
+      heureLimiteField.style.display = urgenceCheckbox.checked ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
