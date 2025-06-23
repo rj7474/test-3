@@ -8,88 +8,62 @@
 </head>
 <body>
   <header>
-     <header>
-  <div class="header-container">
-    <img src="logo.png" alt="Logo" class="logo" />
-    <h1>CargobikeServices</h1>
-  </div>
-    <h1>CargobikeServices</h1>
-    <p>Livraison éco-responsable b2b et particuliers en vélo cargo haute capacité</p>
+    <div class="header-container">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <h1>CargobikeServices</h1>
+    </div>
+    <p>Livraison éco-responsable B2B et particuliers en vélo cargo haute capacité</p>
   </header>
 
- <section id="form">
-  <h2>Commander une livraison</h2>
-  <form id="livraisonForm" action="https://formspree.io/f/mwkgygwl" method="POST">
-    <label>Nom :
-      <input type="text" name="nom" required />
-    </label><br>
-
-    <label>Email :
-      <input type="email" name="email" required />
-    </label><br>
-
-    <label>Type de client :
-      <select id="typeClient" name="type">
-        <option value="particulier">Particulier</option>
-        <option value="entreprise">Entreprise</option>
-      </select>
-    </label><br>
-
-    <div id="societeField" style="display: none;">
-      <label>Nom de société :
-        <input type="text" name="societe" />
+  <section id="form">
+    <h2>Commander une livraison</h2>
+    <form id="livraisonForm" action="https://formspree.io/f/mwkgygwl" method="POST">
+      <label>Nom :
+        <input type="text" name="nom" required />
       </label><br>
-    </div>
 
-    <label>Livraison urgente :
-      <input type="checkbox" id="urgence" />
-    </label><br>
-
-    <div id="heureLimiteField" style="display: none;">
-      <label>Heure limite :
-        <input type="time" name="heureLimite" />
+      <label>Email :
+        <input type="email" name="email" required />
       </label><br>
-    </div>
 
-    <label>Adresse de départ :
-      <input type="text" name="depart" required />
-    </label><br>
+      <label>Type de client :
+        <select id="typeClient" name="type">
+          <option value="particulier">Particulier</option>
+          <option value="entreprise">Entreprise</option>
+        </select>
+      </label><br>
 
-    <label>Adresse d’arrivée :
-      <input type="text" name="arrivee" required />
-    </label><br>
+      <div id="societeField" style="display: none;">
+        <label>Nom de société :
+          <input type="text" name="societe" />
+        </label><br>
+      </div>
 
-    <label>Détails du colis :
-      <textarea name="details" rows="4"></textarea>
-    </label><br>
+      <label>Livraison urgente :
+        <input type="checkbox" id="urgence" />
+      </label><br>
 
-    <button type="submit">Envoyer la demande</button>
-  </form>
-</section>
+      <div id="heureLimiteField" style="display: none;">
+        <label>Heure limite :
+          <input type="time" name="heureLimite" />
+        </label><br>
+      </div>
 
-   
+      <label>Adresse de départ :
+        <input type="text" name="depart" required />
+      </label><br>
+
+      <label>Adresse d’arrivée :
+        <input type="text" name="arrivee" required />
+      </label><br>
+
+      <label>Détails du colis :
+        <textarea name="details" rows="4"></textarea>
+      </label><br>
+
+      <button type="submit">Envoyer la demande</button>
     </form>
   </section>
-<script>
-  const typeClient = document.getElementById('typeClient');
-  const societeField = document.getElementById('societeField');
-  const urgenceCheckbox = document.getElementById('urgence');
-  const heureLimiteField = document.getElementById('heureLimiteField');
 
-  typeClient.addEventListener('change', () => {
-    if (typeClient.value === 'entreprise') {
-      societeField.style.display = 'block';
-    } else {
-      societeField.style.display = 'none';
-    }
-  });
-
-  urgenceCheckbox.addEventListener('change', () => {
-    heureLimiteField.style.display = urgenceCheckbox.checked ? 'block' : 'none';
-  });
-</script>
   <footer>
-    <p>&copy; 2025 CargobikeServices · Genève · Livraison 100% vélo</p>
-  </footer>
-</body>
-</html>
+    <
