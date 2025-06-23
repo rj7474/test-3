@@ -149,6 +149,17 @@
       font-size: 0.9rem;
     }
 
+    /* Style liens téléphone & email */
+    a {
+      color: #2a7a3d;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       .hero {
         font-size: 1.5rem;
@@ -160,7 +171,7 @@
 <body>
 
   <header>
-    CargoBikeServices
+    CargoBikeServices | Tel : <a href="tel:+41221234567" style="color: white;">+41 22 123 45 67</a>
   </header>
 
   <main>
@@ -222,10 +233,18 @@
         <button type="submit">Envoyer la demande</button>
       </form>
     </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p><strong>Téléphone :</strong> <a href="tel:+41221234567">+4178 210 14 91</a></p>
+      <p><strong>Email :</strong> <a href="mailto:contact@cargobikeservices.ch">contact@cargobikeservices.ch</a></p>
+    </section>
   </main>
 
   <footer>
-    © 2025 CargoBikeServices - Livraison écoresponsable à Genève | contact@cargobikeservices.ch
+    © 2025 CargoBikeServices - Livraison écoresponsable à Genève | 
+    <a href="tel:+41221234567" style="color: white;">+4178 210 14 91</a> | 
+    <a href="mailto:contact@cargobikeservices.ch" style="color: white;">contact@cargobikeservices.ch</a>
   </footer>
 
 </body>
