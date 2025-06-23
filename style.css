@@ -56,10 +56,10 @@ button:hover {
   background-color: #45a049;
 }
 
-footer {
-  background-color: #e6f7e6;
-  text-align: center;
+section, header, footer {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
   padding: 1rem;
-  font-size: 0.9rem;
-  color: #555;
+  margin: 1rem auto;
+  max-width: 800px;
 }
