@@ -37,7 +37,24 @@
       <button type="submit">Envoyer la demande</button>
     </form>
   </section>
+<script>
+  const typeClient = document.getElementById('typeClient');
+  const societeField = document.getElementById('societeField');
+  const urgenceCheckbox = document.getElementById('urgence');
+  const heureLimiteField = document.getElementById('heureLimiteField');
 
+  typeClient.addEventListener('change', () => {
+    if (typeClient.value === 'entreprise') {
+      societeField.style.display = 'block';
+    } else {
+      societeField.style.display = 'none';
+    }
+  });
+
+  urgenceCheckbox.addEventListener('change', () => {
+    heureLimiteField.style.display = urgenceCheckbox.checked ? 'block' : 'none';
+  });
+</script>
   <footer>
     <p>&copy; 2025 CargobikeServices · Genève · Livraison 100% vélo</p>
   </footer>
