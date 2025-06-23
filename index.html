@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Demande de Livraison - Vélo Cargo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+    <h1>Demande de Livraison</h1>
+    <form action="#" method="POST">
+      <label for="nom">Nom *</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">E-mail *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telephone">Téléphone *</label>
+      <input type="tel" id="telephone" name="telephone" required>
+
+      <label for="type-client">Type de client *</label>
+      <select id="type-client" name="type-client" required>
+        <option value="">-- Choisissez --</option>
+        <option value="particulier">Particulier</option>
+        <option value="entreprise">Entreprise (B2B)</option>
+      </select>
+
+      <label for="type-livraison">Type de livraison *</label>
+      <select id="type-livraison" name="type-livraison" required>
+        <option value="">-- Sélectionnez --</option>
+        <option value="colis">Colis</option>
+        <option value="produits_frais">Produits frais</option>
+        <option value="encombrant">Marchandises encombrantes</option>
+      </select>
+
+      <label for="adresse">Adresse de livraison *</label>
+      <textarea id="adresse" name="adresse" rows="2" required></textarea>
+
+      <label for="volume">Volume/Poids estimé</label>
+      <input type="text" id="volume" name="volume" placeholder="Ex : 1 m³ ou 50 kg">
+
+      <label for="message">Informations supplémentaires</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Envoyer la demande</button>
+    </form>
+  </section>
+
+</body>
+</html>
 
